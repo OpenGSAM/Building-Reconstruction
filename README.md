@@ -1,6 +1,7 @@
-# Roof Primitive Regression and Point Cloud Processing
+# Synthetic learning for primitive-based building model reconstruction from point clouds
 
-This repository contains code for roof primitive regression and point cloud processing using deep learning techniques. The project is implemented in Python and PyTorch, with additional utilities for evaluation and visualization.
+
+This repository contains code for the paper "Synthetic learning for primitive-based building model reconstruction from point clouds". The project is implemented in Python and PyTorch, with additional utilities for evaluation and visualization.
 
 ## Roof Primitives
 
@@ -16,17 +17,15 @@ Design of the training procedure.
 ## Features
 
 - **Point Cloud Processing**: Implements point cloud sampling, grouping, and feature extraction using neural networks.
-- **Roof Primitive Regression**: Predicts geometric parameters of roof primitives from point cloud data.
+- **Roof Primitive Determination**: Predicts roof types and geometric parameters of roof primitives from point cloud data.
 - **Visualization**: Uses `pyvista` for 3D visualization of predictions and ground truth.
 - **Evaluation Metrics**: Includes metrics like RMSE, reconstruction scores, and parameter errors for model evaluation.
 
 ## Repository Structure
 
-- `model.py`: Contains the neural network models, including `Pct` and `Pct_reg`, for point cloud processing and regression.
-- `eval_roof_primitive_reg.py`: Script for evaluating the model's performance, including visualization and metric computation.
-- `util.py`: Utility functions for point cloud sampling and grouping.
-- `data/`: Directory for storing input point cloud data.
-- `results/`: Directory for saving evaluation results and visualizations.
+- `demo`: Demo scripts for building roof primitive determination from building point clouds.
+- `source`: Scripts the work in this repo, including model design, training, testing, and other utilities.
+- `main_**`: Maing entrance for building primitive determination.
 
 ## Reconstruction Results
 ![NYC_reconstruction](https://github.com/user-attachments/assets/3cc53f4f-c4b8-46cc-a9eb-60b034cd2ec7)
